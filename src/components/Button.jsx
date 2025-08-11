@@ -1,12 +1,11 @@
-export default function Button({text, onClick}) {
+ function Button({text, onClick}) {
     return (
     <div>
-        <button
-      onClick={onClick}>
-      {text}
-    </button>
-      </div>
+        <button onClick={onClick}> {text}
+        </button>
+    </div>
     
     )
 
-}
+};
+export default Button;
