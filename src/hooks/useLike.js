@@ -1,22 +1,18 @@
 import { useState } from "react";
 
-export default function useLike(initialLiked = false, likesCount = 0) {
-  const [isLiked, setIsLiked] = useState(initialLiked);
+export default function useLike(initialLike = false, initialLikesCount = 0) {
+  const [isLike, setIsLike] = useState(initialLike);
+  const [isLikeCount, setIsLikeCount] = useState(initialLikesCount);
 
-  // 1. Create liked state (boolean)
-  const handleUnlikedCount = (likesCount) => {
-    setIsLiked((prevCount) => prevCount - likesCount);
+  const handleLikeToggle = () => {
+    if (isLike) {
+      setIsLike(false);
+      setIsLikeCount((prev) => prev - 1);
+    } else {
+      setIsLike(true);
+      setIsLikeCount((prev) => prev + 1);
+    }
   };
 
-  // 2. Create likeCount state (number)
-  const handleLikedCount = (likesCount) => {
-    setIsLiked((prevCount) => prevCount + likesCount);
-  };
-
-  // 3. Function to toggle like
-  const handleLikedToggle = () => {
-    setIsLiked(!isLiked);
-  };
-
-  return { isLiked, handleLikedCount, handleLikedToggle, handleUnlikedCount };
+  return { isLike, isLikeCount, handleLikeToggle };
 }
