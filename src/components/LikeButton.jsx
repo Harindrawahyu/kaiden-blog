@@ -7,9 +7,9 @@ const {isLike, isLikeCount, handleLikeToggle } = useLike(initialLike, initialLik
 return (
 <>
     <button onClick={handleLikeToggle} 
-    className="px-3 py-3 flex cursor-pointer bg-transparent rounded-4xl text-white hover:bg-[#07111d]">
+    className="px-3 py-3 flex cursor-pointer bg-transparent rounded-4xl text-white hover:bg-[#8b8b8b]">
       <i
-        className={`fa ${isLike ? "fa-heart" : "fa-heart-o"} text-white`}
+        className={`fa ${isLike ? "fa-heart" : "fa-heart-o"}`}
         aria-hidden="true"
       ></i>
     </button>
