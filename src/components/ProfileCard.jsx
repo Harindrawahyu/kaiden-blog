@@ -1,6 +1,5 @@
-function ProfileCard({name, bio, profileName, avatar})
-{
-    return (
+function ProfileCard({ name, bio, profileName, avatar }) {
+  return (
     <div className="max-w-sm h-screen p-4 border rounded-lg shadow-sm bg-white text-left fixed inset-y-0 right-0">
 
       {/* Foto Profil */}
@@ -12,7 +11,7 @@ function ProfileCard({name, bio, profileName, avatar})
 
       {/* Nama */}
       <h2 className="mt-4 text-xl font-bold text-black">
-       {name}
+        {name}
       </h2>
 
       {/* Bio */}
@@ -28,7 +27,7 @@ function ProfileCard({name, bio, profileName, avatar})
       </div>
     </div>
 
-    );
+  );
 }
 
 export default ProfileCard;
