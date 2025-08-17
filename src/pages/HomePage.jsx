@@ -1,5 +1,6 @@
 import Post from "../components/Post"
-import { Navbar } from "../components/Navbar";
+import Navbar from "../components/Navbar";
+import LeftSidebar from "../components/LeftSidebar";
 
 
 function HomePage() {
@@ -28,9 +29,17 @@ function HomePage() {
 
   return (
     <>
+
+      {/* Navbar */}
       <Navbar />
-      <div className="flex flex-col items-center gap-6 p-8 min-h-screen bg-[#1C1B1C]">
-        <h1 className="mt-15 text-2xl font-bold">Blog Posts</h1>
+      {/* <div className="flex-1">
+          <LeftSidebar />
+        </div> */}
+
+
+      {/* Main Content */}
+      <div className="flex flex-col items-center gap-6 p-8 bg-[#1C1B1C]">
+        <h1 className="mt-20 text-2xl font-bold">Hello World!</h1>
         {posts.map(post => (
           <Post
             key={post.id}
