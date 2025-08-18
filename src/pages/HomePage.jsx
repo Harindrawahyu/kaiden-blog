@@ -32,9 +32,9 @@ function HomePage() {
 
       {/* Navbar */}
       <Navbar />
-      {/* <div className="flex-1">
-          <LeftSidebar />
-        </div> */}
+
+      {/* Left Sidebar */}
+      {/* <LeftSidebar /> */}
 
 
       {/* Main Content */}
@@ -49,6 +49,10 @@ function HomePage() {
           />
         ))}
       </div>
+
+      {/* Right Sidebar */}
+
+
     </>
   );
 }
