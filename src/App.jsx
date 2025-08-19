@@ -1,17 +1,20 @@
 import './App.css'
 import { Routes, Route } from 'react-router';
 import NotFoundPage from './pages/NotFoundPage';
-import AboutPage from './pages/AboutPage';
 import HomePage from './pages/HomePage';
+import ProjectsPage from './pages/ProjectsPage';
+import ResumePage from './pages/ResumePage';
+import ContactPage from './pages/ContactPage';
+
 
 function App() {
   return (
     <>
       <Routes>
         <Route path='/' element={<HomePage />} />
-        <Route path='/About' element={<AboutPage />} />
-        {/* <Route path='/Projects' element={<AboutPage />} />
-        <Route path='/Contact' element={<AboutPage />} /> */}
+        <Route path='/Resume' element={<ResumePage />} />
+        <Route path='/Projects' element={<ProjectsPage />} />
+        <Route path='/Contact' element={<ContactPage />} />
 
         {/* NOT FOUND */}
         <Route path='/*' element={<NotFoundPage />} />
