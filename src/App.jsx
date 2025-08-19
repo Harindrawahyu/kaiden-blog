@@ -15,7 +15,6 @@ function App() {
         <Route path='/Resume' element={<ResumePage />} />
         <Route path='/Projects' element={<ProjectsPage />} />
         <Route path='/Contact' element={<ContactPage />} />
-
         {/* NOT FOUND */}
         <Route path='/*' element={<NotFoundPage />} />
       </Routes>

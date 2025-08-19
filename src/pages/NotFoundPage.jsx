@@ -1,6 +1,6 @@
 export default function NotFoundPage() {
     return (
-        <div className="items-center justify-center font-bold text-4xl">
+        <div className=" text-2xl text-white font-bold flex flex-col items-center">
             <h1>Upss... Not Found</h1>
         </div>
     );
