@@ -16,8 +16,8 @@ export default function HomePage() {
 
       {/* Main Content */}
       <div className="flex flex-col items-center gap-6 p-8 bg-[#1C1B1C]">
-        <h1 className="mt-20 text-2xl text-white font-bold">You already in Home</h1>
-      </div>
+        <h1 className="mt-20 text-2xl text-white font-bold">Hi I'm Kaiden</h1>
+      </div>x
 
       {/* Right Sidebar */}
 
