@@ -5,7 +5,6 @@ import HomePage from './pages/HomePage';
 import ProjectsPage from './pages/ProjectsPage';
 import ResumePage from './pages/ResumePage';
 import ContactPage from './pages/ContactPage';
-import AllPages from './pages/AllPages';
 
 
 function App() {
@@ -16,7 +15,6 @@ function App() {
         <Route path='/Resume' element={<ResumePage />} />
         <Route path='/Projects' element={<ProjectsPage />} />
         <Route path='/Contact' element={<ContactPage />} />
-        <Route path='/Test' element={<AllPages />} />
         {/* NOT FOUND */}
         <Route path='/*' element={<NotFoundPage />} />
       </Routes>
