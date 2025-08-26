@@ -1,9 +1,8 @@
 import Post from "../components/Post"
 import Navbar from "../components/Navbar";
-import LeftSidebar from "../components/LeftSidebar";
 
 
-export default function ProjectsPage() {
+export default function ProjectPage() {
     const posts = [
         {
             id: 1,

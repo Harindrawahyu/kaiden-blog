@@ -1,6 +1,4 @@
-import Post from "../components/Post"
 import Navbar from "../components/Navbar";
-import LeftSidebar from "../components/LeftSidebar";
 
 
 export default function HomePage() {
@@ -10,14 +8,16 @@ export default function HomePage() {
       {/* Navbar */}
       <Navbar />
 
-      {/* Left Sidebar */}
-      {/* <LeftSidebar /> */}
-
-
       {/* Main Content */}
-      <div className="flex flex-col items-center gap-6 p-8 bg-[#1C1B1C]">
-        <h1 className="mt-20 text-2xl text-white font-bold">Hi I'm Kaiden</h1>
-      </div>
+      <main className="mt-auto">
+        <div class="relative h-full w-full bg-white"></div>
+      </main>
+      <section className="flex flex-col items-center gap-6 p-8 bg-[#1C1B1C]">
+        <div className="container ">
+          <h1 className="py-10 text-center text-3xl sm:text-5xl text-white font-bold">I'm Kaiden</h1>
+        </div>
+      </section>
+
 
       {/* Right Sidebar */}
 
