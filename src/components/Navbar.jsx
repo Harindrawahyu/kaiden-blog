@@ -70,6 +70,8 @@ export default function Navbar() {
                 {/* True : False */}
                 {menuOpen ? <FaTimes /> : <FaBars />}
             </button>
+
+
             {/* Mobile Items */}
             {
 
